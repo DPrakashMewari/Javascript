@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Capturing Video </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width",intial-scale=1.0>
+<style>
+h1 {
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+</style>
+
+<script>
+	navigator.mediaDevices.getUserMedia({
+		video : {
+			width : 1200,
+			height : 822,
+		}
+	})
+	.then(stream =>{
+		document.getElementById("video").srcObject = stream;
+	})
+</script>
+ 
+</head>
+<body style="background-color: black">
+   <h1> Capturing Video Through Webcam </h1>
+   <video id="video" width="640" height="480" autoplay controls></video>
+ 
+
+
+  </body>
+</html>
