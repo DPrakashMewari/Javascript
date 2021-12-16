@@ -74,11 +74,26 @@ $('span').on({
     //         height:'140px',
     //         width:'300px'
     //     },'slow')
-    // })
-$('#word').animate({opacity:0.4},1000)
-$('#word').stop()
-$('#word').animate({opacity:0.3},200)
-$('#word').animate({width:'100%'},100)
+    //     // })
+    // $('#word').animate({opacity:0.4},1000)
+    // // $('#word').stop()
+    // $('#word').animate({opacity:0.3},200)
+    // $('#word').animate({width:'100%'},100)
+    
+    // text method
+    $('word').text() // to see or change
+       $('word').text('Prakash') // to see or change
+       $('word').html('Prakash') // to see or change
+       $('#inp').val('Prakash') // to see or change
+       //$('#word').empty() // to empy change
+       //$('#word').remove() // to remove         
+    
+    // class add -- toggle class,remove class   
+       // $('#word').addClass('myclass2') // for add class
+
+    // css Manipulation  
+       $('#word').css('color','green') //
+
 
 
 
