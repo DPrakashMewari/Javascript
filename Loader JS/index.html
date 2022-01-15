@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Loader In Website</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>    
+<h1 style="justify-content: center">Random Images </h1>
+<body>
+   
+   <div class="content">
+     
+    <img src="https://picsum.photos/1200/700?random=2">
+   </div>
+
+   <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+</html>
